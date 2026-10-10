@@ -27,16 +27,5 @@ def test_api():
         print("Body:")
         print(json.dumps(r_campaign.json(), indent=2))
 
-        # 3. Verify static audio file from response
-        audio_url = r_campaign.json().get("voice_ad", {}).get("audio_url")
-        if audio_url:
-            print("\n" + "="*50)
-            print(f"GET {audio_url}")
-            print("="*50)
-            r_audio = client.get(audio_url)
-            print(f"Status Code: {r_audio.status_code}")
-            print("Headers Content-Type:", r_audio.headers.get("content-type"))
-            print(f"Content Length: {len(r_audio.content)} bytes")
-
 if __name__ == "__main__":
     test_api()

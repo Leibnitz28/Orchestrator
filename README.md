@@ -204,4 +204,3 @@ Released under the [MIT License](LICENSE).
 - Hacktoberfest Hack Day Hamirpur, NIT Hamirpur Chapter and GDG Ludhiana
 - Major League Hacking
 - The Gemma team at Google for open-weight models
-- **ElevenLabs** (Built for the ElevenLabs Track Prize - historically used for voice-ad generation before being scoped out for the final demo submission).
